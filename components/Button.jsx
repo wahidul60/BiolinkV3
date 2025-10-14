@@ -9,7 +9,7 @@ const roboto = Roboto({
 export default function ({ text, className }) {
     return (
         <div>
-            <button className={`rounded-full px-6 font-medium text-[18px] py-2 text-black cursor-pointer duration-300 border-3 border-[#EA580C] ${roboto.className} ${className}`}>{text}</button>
+            <button className={`rounded-full px-6 font-medium text-[18px] py-1 text-black cursor-pointer duration-300 border-3 border-[#EA580C] ${roboto.className} ${className}`}>{text}</button>
         </div>
     )
 }

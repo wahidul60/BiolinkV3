@@ -21,8 +21,8 @@ export default function Navbar() {
                     </Flex>
 
                     <Flex className='gap-6 w-1/3'>
-                        <Button className='hover:bg-[#EA580C] hover:text-white' text={"Sign in"} />
-                        <Button className='hover:bg-[#EA580C] hover:text-white' text={"Sign up"} />
+                        <Button className='hover:bg-[#EA580C] shadow-md hover:text-white' text={"Sign in"} />
+                        <Button className='hover:bg-[#EA580C] shadow-md hover:text-white' text={"Sign up"} />
                     </Flex>
 
                 </Flex>
