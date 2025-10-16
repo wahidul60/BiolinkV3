@@ -7,9 +7,9 @@ import Button from './Button'
 
 export default function Navbar() {
     return (
-        <nav className='shadow-md'>
+        <nav className='shadow-md sticky top-0 bg-white/30 backdrop-blur-md z-50'>
             <Container>
-                <Flex className='w-full py-5 items-center justify-center'>
+                <Flex className='w-full py-5 items-center justify-center '>
                     
                     <div className='w-1/3 cursor-pointer'><Image src="/Logo.png" width={142} height={32} alt="Logo" /></div>
                     
@@ -20,7 +20,7 @@ export default function Navbar() {
                         <MenuList text={"Contact"} />
                     </Flex>
 
-                    <Flex className='gap-6 w-1/3'>
+                    <Flex className='gap-6 w-1/3 justify-end'>
                         <Button className='hover:bg-[#EA580C] shadow-md hover:text-white' text={"Sign in"} />
                         <Button className='hover:bg-[#EA580C] shadow-md hover:text-white' text={"Sign up"} />
                     </Flex>

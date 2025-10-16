@@ -29,14 +29,16 @@ export default function HeroSection() {
                         <h1 className={`text-[44px] text-[#EA580C] pb-4 ${source_serif.className}`} >All that defines you in a single, seamless bio link</h1>
                         <p className={`text-xl pb-[10px] ${inter.className}`}>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat.</p>
 
-                        <div className='border-2 rounded-full border-[#EA580C] relative pl-4 pr-2 mb-[62px]' >
-                            <Flex className='items-center justify-between '>
-                                <Flex className='items-center '>
-                                    <IoMdSearch />
-                                    <p className='py-5 pl-3 pr-[207px]'>Username</p>
-                                </Flex>
-                                <Button className='py-2 bg-[#EA580C] text-white' text={"Clain your link"} />
-                            </Flex>
+                        <div className="border-2 rounded-full border-[#EA580C] relative pl-4 pr-2 mb-[62px] flex items-center justify-between">
+                            <div className="flex items-center py-1">
+                                <IoMdSearch className="text-gray-600" />
+                                <input
+                                    type="text"
+                                    placeholder="Username"
+                                    className="py-3 pl-3 pr-4 outline-none bg-transparent w-full"
+                                />
+                            </div>
+                            <Button className=" bg-[#EA580C] text-white rounded-full" text="Claim your link"/>                           
                         </div>
 
                         <p className={`text-[18px] pb-2 text-[#2D2D2D] font-medium ${ibm.className}`}>Trusted by 5k+ users</p>
@@ -53,7 +55,7 @@ export default function HeroSection() {
                         </Flex>
                     </div>
                     <div className='w-1/2'>
-                        <Image src='/homeBanner.GIF' alt='this hero section' width={990} height={742}/>
+                        <Image src='/homeBanner.GIF' alt='this hero section' width={990} height={742} />
                     </div>
                 </Flex>
             </Container>
