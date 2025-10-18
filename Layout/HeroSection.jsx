@@ -55,7 +55,7 @@ export default function HeroSection() {
                         </Flex>
                     </div>
                     <div className='w-1/2'>
-                        <Image src='/homeBanner.GIF' alt='this hero section' width={990} height={742} />
+                        <Image src='/homeBanner.gif' alt='this hero section' width={990} height={742} />
                     </div>
                 </Flex>
             </Container>
