@@ -21,7 +21,7 @@ export default function Testimonials() {
                     How to create  and share link to enrich your followers
                 </p>
 
-                <Flex>
+                <Flex className='pb-10'>
                     <div className='w-1/3'>
                         <Card />
                     </div>
@@ -32,7 +32,7 @@ export default function Testimonials() {
                         <Card />
                     </div>
                 </Flex>
-
+                <h1 className={`${roboto.className} w-full text-center font-semibold text-[16px] underline-offset-1`}>view all</h1>
             </Container>
         </section>
     )

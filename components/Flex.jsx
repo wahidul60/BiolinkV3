@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Flex({children, className}) {
+export default function Flex({children, className, ...props}) {
   return (
-    <div className={`flex ${className}`}>
+    <div className={`flex ${className}`} {...props}>
         {children}
     </div>
   )

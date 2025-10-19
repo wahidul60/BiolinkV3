@@ -7,7 +7,7 @@ import Button from './Button'
 
 export default function Navbar() {
     return (
-        <nav className='shadow-md sticky top-0 bg-white/30 backdrop-blur-md z-50'>
+        <nav className='shadow-md sticky top-0 bg-white  z-50'>
             <Container>
                 <Flex className='w-full py-5 items-center justify-center '>
                     

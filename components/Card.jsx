@@ -16,7 +16,7 @@ export default function Card() {
     return (
         <div className='cursor-pointer group'>
 
-            <div className='text-[#EA580C] items-center justify-center pb-4 gap-1 w-[254px] hidden group-hover:flex'>
+            <div className='text-[#EA580C] items-center justify-center pb-4 gap-1 w-[254px] opacity-0 group-hover:opacity-100 flex'>
                 <TiStar className='text-[22px]' />
                 <TiStar className='text-[22px]' />
                 <TiStar className='text-[22px]' />
@@ -24,7 +24,7 @@ export default function Card() {
                 <FaRegStar />
             </div>
 
-            <div className='h-[400px] w-[254px] rounded-[30px] bg-white px-6'>
+            <div className='h-[400px] w-[254px] rounded-[30px] bg-white px-6 shadow-md'>
                 <p className={`pt-8 pb-10 ${vietnam.className} text-[16px] font-light`}>
                     Aliqua id fugiat nostrud irure ex duis ea quis id quis ad etc. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint.
                 </p>
