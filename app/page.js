@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar'
 import FAQ from '@/Layout/FAQ'
+import Footer from '@/Layout/Footer'
 import HappyPartner from '@/Layout/HappyPartner'
 import HeaderGone from '@/Layout/HeaderGone'
 import HeroSection from '@/Layout/HeroSection'
@@ -11,16 +12,14 @@ import React from 'react'
 
 export default function page() {
   return (
-    <main>
-      <Navbar/>
+    <main>     
       <HeroSection/>
       <UnmatchFeature/>
       <HeaderGone/>
       <HowWork/>
       <HappyPartner/>
       <Testimonials/>
-      <FAQ/>
-      <Subscription/>
+      <FAQ/>     
     </main>
   )
 }

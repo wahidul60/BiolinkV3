@@ -20,7 +20,7 @@ const robotoSerif = Roboto_Serif({
 
 export default function HeaderGone() {
     return (
-        <section className='bg-[#f0f0f0]'>
+        <section className='bg-[#f0f0f0] pt-16'>
             <Container>
                 <div className='w-full pb-[98px]'>
                     <h1 className={`pt-8 text-2xl text-[#2D2D2D] pb-3 text-center text-[28px] font-bold ${roboto.className} `}>Header gone here</h1>
@@ -57,15 +57,15 @@ export default function HeaderGone() {
                                 <Flex className='gap-8'>
 
                                     <div className='w-[244px] h-[244px] flex flex-col items-center justify-center bg-white rounded-[20px] shadow-md'>
-                                        <RiSeoLine className='text-9xl text-[#EA580C]'/>                                       
+                                        <RiSeoLine className='text-9xl text-[#EA580C]' />
                                         <p className={`text-center pt-4 font-normal text-[#2D2D2D] ${roboto.className} text-[20px]`}>Free Seo Optimization</p>
                                     </div>
 
-                                     <div className='w-[440px] flex flex-col justify-center items-center h-[244px] bg-white rounded-[20px] shadow-md'>
+                                    <div className='w-[440px] flex flex-col justify-center items-center h-[244px] bg-white rounded-[20px] shadow-md'>
 
-                                       <RiShieldStarLine className='text-[#EA580C] text-[100px] pb-6' />                                       
+                                        <RiShieldStarLine className='text-[#EA580C] text-[100px] pb-6' />
 
-                                        <p className={`text-center w-[225px] font-semibold text-[#4B5768] ${roboto.className} text-[16px]`}>with ongoing features and improvements at no extra cost.</p>                                        
+                                        <p className={`text-center w-[225px] font-semibold text-[#4B5768] ${roboto.className} text-[16px]`}>with ongoing features and improvements at no extra cost.</p>
 
                                         <p className={`text-center pt-4 font-normal text-[#2D2D2D] ${roboto.className} text-[20px]`}>Free Seo Optimization</p>
                                     </div>

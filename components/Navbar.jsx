@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Flex from './Flex'
 import MenuList from './MenuList'
 import Button from './Button'
+import Link from 'next/link'
 
 export default function Navbar() {
     return (
@@ -21,7 +22,10 @@ export default function Navbar() {
                     </Flex>
 
                     <Flex className='gap-6 w-1/3 justify-end'>
-                        <Button className='hover:bg-[#EA580C] shadow-md hover:text-white' text={"Sign in"} />
+                        <Link href='/signin'>
+                             <Button className='hover:bg-[#EA580C] shadow-md hover:text-white' text={"Sign in"} />
+                        </Link>
+                       
                         <Button className='hover:bg-[#EA580C] shadow-md hover:text-white' text={"Sign up"} />
                     </Flex>
 
