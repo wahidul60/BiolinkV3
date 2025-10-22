@@ -12,10 +12,11 @@ const poppins = Poppins({
 
 export default function page() {
   return (
-    <section>
+    <section className='bg-[#f0f0f0]'>
       <Container>
 
-        <Flex className='gap-[137px] mb-[64px]'>
+        <Flex className='gap-[137px] pb-[64px]'>          
+          
           <div className='w-1/2'>
             <Image
               src={'/loginImage.png'}
@@ -24,12 +25,13 @@ export default function page() {
               alt='login'
             />
           </div>
-          <div className='w-1/2'>
+
+          <div className='w-1/2 py-10'>
             <h1 className={`font-semibold text-[52px] pb-[30px] ${poppins.className}`}>Sign in now 👋</h1>
             <p className={`font-normal text-[18px] pb-[30px] text-[#4B5768] ${poppins.className}`}>Clarity gives you the blocks and components you need to create a truly professional website.</p>
+            
             <Flex className='items-center justify-center pb-[49px]'>
               <Button className={`font-normal py-4 text-[16px] w-full text-center bg-[#EA580C] text-white ${poppins.className}`} text={'Sign in with Google'} />
-
             </Flex>
 
             <p className={`text-[14px] pb-2 text-[#2D2D2D] ${poppins.className}`}>username</p>
@@ -39,24 +41,28 @@ export default function page() {
               className={`text-[14px] text-[#2D2D2D] py-[17px] px-4 w-full border rounded-full border-[#334155] poppins.className mb-6`}
             />
 
-            <p className={`text-[14px] pb-2 text-[#2D2D2D] ${poppins.className}`}>username</p>
+            <p className={`text-[14px] pb-2 text-[#2D2D2D] ${poppins.className}`}>password</p>
             <input
               type="password"
               placeholder='*********'
               className={`text-[14px] text-[#2D2D2D] py-[17px] w-full px-4 pl-4 ${poppins.className}  rounded-full mb-6 border border-[#334155]`}
             />
+
             <Flex className='items-center justify-between'>
+
               <Flex className='gap-2'>
                 <input
                   type="checkbox"
                   className={`text-[14px] w-5 h-5 text-[#2D2D2D] ${poppins.className}`}
                 />
-                <p className='pb-6'>Remember me</p>
+                <p className={`text-[14px] text-[#2D2D2D] pb-6 ${poppins.className}`}>Remember me</p>
               </Flex>
-              <p>Forgot password?</p>
+
+              <p className={`text-[14px] text-[#64748B] pb-6 ${poppins.className}`}>Forgot password?</p>
             </Flex>
-            <Button className={`font-normal py-4 px-[130px] text-[16px] text-center bg-[#EA580C] pb-6 text-white ${poppins.className}`} text={'Sign in '} />
-            <p className={`text-[14px] text-[#64748B] ${poppins.className}`}>Don't have an account? <span>Create free account</span></p>
+
+            <Button className={`font-normal mb-6 py-1 px-[73px] text-[16px] text-center bg-[#EA580C] text-white ${poppins.className}`} text={'Sign in '} />
+            <p className={`text-[14px] text-[#64748B] ${poppins.className}`}>Don't have an account? <span className={`text-[#EA580C] font-semibold text-[14px]`}>Create free account</span></p>
           </div>
 
         </Flex>
